@@ -9,6 +9,11 @@ function showButtonClick() {
 }
 
 window.onload = function() {
+  reloadTable();
+}
+
+ function reloadTable() {
+  document.getElementsByTagName("TABLE")[0].remove();
   var table = document.createElement("TABLE");
   var tableHeader1 = document.createElement("TH");
   var textHeader1 = document.createTextNode("Location");
