@@ -34,4 +34,5 @@ window.onload = function() {
     }
     table.appendChild(node);
   }
+  document.getElementByTagName("body")[0].appendChild(table);
 }
