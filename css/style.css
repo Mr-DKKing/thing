@@ -1,7 +1,8 @@
 .title1 {
-  font-size: 4vw; 
+  font-size: 5vw; 
   font-family: verdana; 
-  color: #ccc;
+  color: #2d2727;
+  font-weight: 900;
 }
 .title2 {
   font-size: 4vw; 
@@ -12,7 +13,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: #454545;
+    background-color: #827e7e4f;
     transition: all 500ms linear;
     transition-delay: 1s;
 }
@@ -49,8 +50,13 @@ body:hover{
 table, th, td {
     border: 1px solid #333;
     border-collapse: collapse;
-    color: #ccc;
+    color: #ffffff;
+    
 }
+
+tr:nth-child(even) {background-color: #4f1d73;}
+tr:nth-child(odd) {background-color: #bb60ff;}
+
 
 th, td {
     padding: 15px;
@@ -59,17 +65,17 @@ th, td {
 
 /* the following code (until the next comment) came from an excellent w3schools tutorial, but I edited it a lot to fit my needs. */
 .button {
-  border-radius: 4px;
-  background-color: #0194D8;
+  border-radius: 6px;
+  background-color: #f1f511fa;
   border: none;
-  color: #FFFFFF;
+  color: #544747;
   text-align: center;
-  font-size: 28px;
+  font-size: 36px;
   padding: 10px;
   width: 220px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 2px;
+  margin: 12px;
   z-index:1;
 }
 
