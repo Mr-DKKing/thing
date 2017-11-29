@@ -11,15 +11,15 @@ function showButtonClick() {
 window.onload = function() {
   var table = document.createElement("TABLE");
   var tableHeader1 = document.createElement("TH");
-  var textHeader1 = document.createTextnode("Location");
+  var textHeader1 = document.createTextNode("Location");
   tableHeader1.appendChild(textHeader1);
   table.appendChild(tableHeader1);
   var tableHeader2 = document.createElement("TH");
-  var textHeader2 = document.createTextnode("Date");
+  var textHeader2 = document.createTextNode("Date");
   tableHeader2.appendChild(textHeader2);
   table.appendChild(tableHeader2);
   var tableHeader3 = document.createElement("TH");
-  var textHeader3 = document.createTextnode("Time");
+  var textHeader3 = document.createTextNode("Time");
   tableHeader3.appendChild(textHeader3);
   table.appendChild(tableHeader3);
   for (var i = 0; i < array.length; i++) {
@@ -28,7 +28,7 @@ window.onload = function() {
     for (var j = 0; j < row.length; j++)
     {
       var rowNode = document.createElement("TD");
-      var textData = document.createTextnode(row[j]);
+      var textData = document.createTextNode(row[j]);
       rowNode.appendChild(textData);
       node.appendChild(rowNode);
     }
