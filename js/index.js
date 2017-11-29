@@ -2,9 +2,11 @@ var array = [
   ["Location #1", "Date #1", "Time #1"],
   ["Location #2", "Date #2", "Time #2"]
 ];
-
+var hasReloaded = -1;
 function reloadTable() {
-  document.getElementsByTagName("TABLE")[0].remove();
+  hasReloaded++;
+  if (hasReloaded > 0)
+    document.getElementsByTagName("TABLE")[0].remove();
   var table = document.createElement("TABLE");
   var tableHeader1 = document.createElement("TH");
   var textHeader1 = document.createTextNode("Location");
