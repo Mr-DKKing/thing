@@ -3,16 +3,7 @@ var array = [
   ["Location #2", "Date #2", "Time #2"]
 ];
 
-
-function showButtonClick() {
-  $('.box').toggleClass('box-visible');
-}
-
-window.onload = function() {
-  reloadTable();
-}
-
- function reloadTable() {
+function reloadTable() {
   document.getElementsByTagName("TABLE")[0].remove();
   var table = document.createElement("TABLE");
   var tableHeader1 = document.createElement("TH");
@@ -40,4 +31,14 @@ window.onload = function() {
     table.appendChild(node);
   }
   document.getElementsByTagName("body")[0].appendChild(table);
+}
+
+
+
+function showButtonClick() {
+  $('.box').toggleClass('box-visible');
+}
+
+window.onload = function() {
+  reloadTable();
 }
