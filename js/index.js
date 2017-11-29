@@ -10,7 +10,7 @@ function showButtonClick() {
 
 window.onload = function() {
   var table = document.createElement("TABLE");
-  var tableHeader1 = document.creatElement("TH");
+  var tableHeader1 = document.createElement("TH");
   var textHeader1 = document.createTextnode("Location");
   tableHeader1.appendChild(textHeader1);
   table.appendChild(tableHeader1);
