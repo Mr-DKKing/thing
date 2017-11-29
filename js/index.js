@@ -10,15 +10,15 @@ function showButtonClick() {
 
 window.onload = function() {
   var table = document.createElement("TABLE");
-  var tableHeader1 = document.createELement("TH");
+  var tableHeader1 = document.creatElement("TH");
   var textHeader1 = document.createTextnode("Location");
   tableHeader1.appendChild(textHeader1);
   table.appendChild(tableHeader1);
-  var tableHeader2 = document.createELement("TH");
+  var tableHeader2 = document.createElement("TH");
   var textHeader2 = document.createTextnode("Date");
   tableHeader2.appendChild(textHeader2);
   table.appendChild(tableHeader2);
-  var tableHeader3 = document.createELement("TH");
+  var tableHeader3 = document.createElement("TH");
   var textHeader3 = document.createTextnode("Time");
   tableHeader3.appendChild(textHeader3);
   table.appendChild(tableHeader3);
